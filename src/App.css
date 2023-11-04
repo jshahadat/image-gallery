@@ -1,0 +1,235 @@
+.main_content {
+     margin-top: 20px;
+     margin-bottom: 40px;
+}
+
+.title-container {
+     display: flex;
+     justify-content: space-between;
+}
+
+.title-icon {
+     margin-right: 10px;
+     color: white;
+     height: 20px;
+     width: 20px;
+     background-color: #3366FF;
+     border-radius: 2px;
+     opacity: 1;
+     z-index: 1000;
+}
+
+.title {
+     margin-left: 90px;
+}
+
+.delete-file {
+     margin-right: 90px;
+     color: red;
+     font-size: 18px;
+     margin-top: 8px;
+     background: none;
+     border: none;
+}
+
+.selected {
+     opacity: .5;
+}
+
+.selected-icon {
+     position: relative;
+     top: 50px;
+     margin-left: 20px;
+     color: white;
+     height: 30px;
+     width: 30px;
+     background-color: #3366FF;
+     border-radius: 2px;
+     opacity: 1;
+     z-index: 1000;
+}
+
+.selected-iconS {
+     visibility: hidden;
+     position: relative;
+     top: 50px;
+     margin-left: 20px;
+     color: whitesmoke;
+     height: 30px;
+     width: 30px;
+     background-color: whitesmoke;
+     opacity: 1;
+     z-index: 1000;
+}
+
+.image-actions {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.first-image {
+     width: 521px;
+     height: 547px;
+}
+
+.grid-item:nth-child(1) {
+     grid-column: 1 / span 2;
+     grid-row: 1 / span 2;
+}
+
+.rest-image {
+     width: 250px;
+     height: 250px;
+}
+
+.imageContainer {
+     height: 300px;
+}
+
+.grid-container {
+     display: grid;
+     grid-template-columns: auto auto auto auto auto;
+     grid-gap: 10px;
+     padding-left: 100px;
+     padding-right: 100px;
+     justify-content: space-evenly;
+}
+
+.allimage {
+     border: 2px solid gray;
+     border-radius: 8px;
+}
+
+.grid-item:hover img {
+
+     filter: sepia(100%) saturate(0%) hue-rotate(0deg) brightness(80%) contrast(100%);
+}
+
+.grid-item:hover .selected-iconS {
+     visibility: visible;
+}
+
+.upload-container {
+     margin-top: 34px;
+     width: 248px;
+     height: 248px;
+     border: 2px solid gray;
+     border-style: dashed;
+     border-radius: 8px;
+     display: flex;
+     justify-content: center;
+     align-items: center
+}
+
+.btn-icon {
+     margin-left: 40px;
+}
+
+.btn-text {
+     font-size: 18px;
+     font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+     .title-container {
+          height: 44px;
+          display: flex;
+          justify-content: space-between;
+     }
+
+     .title-icon {
+          margin-right: 10px;
+          color: white;
+          height: 12px;
+          width: 12px;
+          background-color: #3366FF;
+          border-radius: 2px;
+          opacity: 1;
+          z-index: 1000;
+     }
+
+     .title {
+          margin-left: 20px;
+          font-size: 15px;
+     }
+
+     .delete-file {
+          margin-right: 8px;
+          color: red;
+          font-size: 12px;
+          margin-top: 14px;
+          background: none;
+          border: none;
+          height: 20px;
+     }
+
+     .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          grid-gap: 10px;
+          padding-left: 100px;
+          padding-right: 100px;
+          justify-content: space-evenly;
+     }
+
+     .first-image {
+          width: 176px;
+          height: 200px;
+     }
+
+     .rest-image {
+          width: 80px;
+          height: 80px;
+     }
+
+
+     .selected-icon {
+          position: relative;
+          top: 30px;
+          margin-left: 10px;
+          color: white;
+          height: 20px;
+          width: 20px;
+          background-color: #008CBA;
+          opacity: 1;
+          z-index: 1000;
+     }
+
+     .selected-iconS {
+          visibility: hidden;
+          position: relative;
+          top: 30px;
+          margin-left: 10px;
+          color: white;
+          height: 20px;
+          width: 20px;
+          background-color: white;
+          opacity: 1;
+          z-index: 1000;
+     }
+
+     .upload-container {
+          margin-top: 23px;
+          width: 78px;
+          height: 78px;
+          border: 2px solid gray;
+          border-style: dashed;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center
+     }
+
+     .btn-icon {
+          margin-left: 20px;
+     }
+
+     .btn-text {
+          font-size: 11px;
+          font-weight: 600;
+     }
+
+}
